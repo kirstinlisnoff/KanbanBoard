@@ -7,6 +7,7 @@ const router = Router();
 
 router.use('/auth', authRoutes);
 // TODO: Add authentication to the API routes
+router.use('/api', authenticateToken); // Apply authentication middleware to API routes
 
 router.use('/api', apiRoutes);
 
