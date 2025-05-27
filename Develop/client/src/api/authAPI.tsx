@@ -16,6 +16,7 @@ const login = async (userInfo: UserLogin) => {
   if (data.error) {
     throw new Error(data.error);
   }
+  return data;
   // Store the token in local storage
 }
 
