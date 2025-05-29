@@ -13,7 +13,7 @@ const app = express();
 const PORT = process.env.PORT || 3001;
 
 app.use(cors({
-  origin: ['http://localhost:5173', 'http://localhost:3000'],
+  origin: ['http://localhost:5173', 'http://localhost:3000', 'postgresql://kanban_db_aoam_user:VpbqrPjMpAnVU81sLtdDzpE3Dz1RL3Nm@dpg-d0sbqc8dl3ps73d3qecg-a/kanban_db_aoam'],
   credentials: true
 }));
 
